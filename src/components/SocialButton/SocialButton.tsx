@@ -1,13 +1,12 @@
-import type { LucideIcon } from 'lucide-react'
 import './SocialButton.css'
 
 interface SocialButtonProps {
   href: string
   label: string
-  icon: LucideIcon
+  icon: string
 }
 
-function SocialButton({ href, label, icon: Icon }: SocialButtonProps) {
+function SocialButton({ href, label, icon }: SocialButtonProps) {
   return (
     <a
       className="social-button"
@@ -16,7 +15,7 @@ function SocialButton({ href, label, icon: Icon }: SocialButtonProps) {
       rel="noreferrer"
       aria-label={label}
     >
-      <Icon aria-hidden="true" size={24} strokeWidth={2} />
+      <img className="social-button__icon" src={icon} alt="" aria-hidden="true" />
       <span>{label}</span>
     </a>
   )

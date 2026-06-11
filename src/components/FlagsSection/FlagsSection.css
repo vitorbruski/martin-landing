@@ -30,6 +30,7 @@
   font-size: clamp(3.5rem, 7vw, 6.75rem);
   letter-spacing: -0.075em;
   line-height: 0.92;
+  text-shadow: 0 16px 38px rgba(16, 42, 67, 0.1);
 }
 
 @media (max-width: 960px) {

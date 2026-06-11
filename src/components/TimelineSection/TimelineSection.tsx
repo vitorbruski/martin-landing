@@ -24,7 +24,7 @@ const timelineItems = [
     year: 'Etapa 04',
     title: 'Novos Desafios',
     description:
-      'Atuação em novos projetos e desafios voltados à gestão pública e à saúde. Uma nova etapa dedicada a compartilhar experiência e desenvolver oportunidades para as pessoas.',
+      'Convite para assumir a Secretaria Municipal de Saúde de São Leopoldo, dando continuidade a uma trajetória de compromisso com as pessoas. Um novo desafio voltado ao fortalecimento da saúde pública e à busca constante por melhorias para a comunidade.',
   },
 ]
 

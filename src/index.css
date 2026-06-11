@@ -12,9 +12,15 @@
   --color-border: #cbd5df;
   --color-white: #ffffff;
   --color-white-alpha: rgba(255, 255, 255, 0.75);
-  --shadow-container: 0 24px 70px rgba(16, 42, 67, 0.12);
-  --shadow-card: 0 14px 30px rgba(16, 42, 67, 0.14);
-  --shadow-elevated: 0 28px 65px rgba(7, 27, 47, 0.32);
+  --shadow-container:
+    0 32px 90px rgba(16, 42, 67, 0.14),
+    0 2px 8px rgba(16, 42, 67, 0.05);
+  --shadow-card:
+    0 18px 38px rgba(16, 42, 67, 0.16),
+    0 2px 5px rgba(7, 27, 47, 0.08);
+  --shadow-elevated:
+    0 36px 80px rgba(7, 27, 47, 0.32),
+    0 8px 20px rgba(7, 27, 47, 0.18);
   --shadow-accent: 0 10px 24px rgba(242, 140, 40, 0.22);
   --shadow-accent-hover: 0 14px 28px rgba(242, 140, 40, 0.32);
   --gradient-accent: linear-gradient(
@@ -54,7 +60,18 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: var(--color-background);
+  background:
+    radial-gradient(
+      circle at 12% 6%,
+      rgba(255, 179, 92, 0.14),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 92% 24%,
+      rgba(36, 63, 92, 0.12),
+      transparent 32rem
+    ),
+    var(--color-background);
 }
 
 button,

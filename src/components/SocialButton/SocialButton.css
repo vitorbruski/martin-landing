@@ -13,12 +13,28 @@
   text-transform: uppercase;
   transition:
     background-color 180ms ease,
-    color 180ms ease;
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .social-button:hover {
   background: var(--gradient-accent);
+  box-shadow: 0 12px 28px rgba(7, 27, 47, 0.24);
   color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.social-button__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-button {
+    transition: none;
+  }
 }
 
 @media (max-width: 560px) {

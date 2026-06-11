@@ -1,11 +1,13 @@
-import { Camera, Globe, Video } from 'lucide-react'
+import instagramIcon from '../../assets/instagram.svg'
 import SocialButton from '../SocialButton/SocialButton'
 import './SocialLinksSection.css'
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com', icon: Camera },
-  { label: 'YouTube', href: 'https://youtube.com', icon: Video },
-  { label: 'Site', href: 'https://example.com', icon: Globe },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/martincesarkalkmann/',
+    icon: instagramIcon,
+  },
 ]
 
 function SocialLinksSection() {

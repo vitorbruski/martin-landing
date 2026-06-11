@@ -1,4 +1,5 @@
 import "./ProfileBanner.css";
+import instagramIcon from "../../assets/instagram.svg";
 import martinPerfilProfissional from "../../assets/images/martin-perfil-profissional.jpeg";
 
 function ProfileBanner() {
@@ -14,7 +15,12 @@ function ProfileBanner() {
       <div className="profile-banner__content">
         <div className="profile-banner__social">
           <span>@martinkalkmann</span>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/martincesarkalkmann/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={instagramIcon} alt="" aria-hidden="true" />
             Seguir no Instagram
           </a>
         </div>

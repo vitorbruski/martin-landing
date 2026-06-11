@@ -1,11 +1,53 @@
 .flag-card {
+  position: relative;
   display: grid;
   min-height: 260px;
   padding: 18px;
   overflow: hidden;
-  background: var(--color-primary);
+  background: linear-gradient(
+    155deg,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
   border-radius: var(--radius-medium);
   box-shadow: var(--shadow-card);
+  transition:
+    box-shadow 280ms ease,
+    transform 280ms ease;
+}
+
+.flag-card::after {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 28px;
+  height: 3px;
+  background: var(--gradient-cta);
+  border-radius: 999px;
+  content: "";
+  opacity: 0.72;
+  transition: width 280ms ease;
+}
+
+.flag-card:hover {
+  box-shadow: 0 24px 52px rgba(16, 42, 67, 0.24);
+  transform: translateY(-6px);
+}
+
+.flag-card:hover::after {
+  width: 52px;
+}
+
+.flag-card:nth-of-type(1),
+.flag-card:nth-of-type(5) {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(255, 179, 92, 0.22),
+      transparent 55%
+    ),
+    linear-gradient(155deg, var(--color-primary-light), var(--color-primary-dark));
+  box-shadow: 0 22px 48px rgba(16, 42, 67, 0.22);
 }
 
 .flag-card img {
@@ -13,6 +55,15 @@
   height: 170px;
   border-radius: var(--radius-small);
   object-fit: cover;
+  filter: contrast(1.04) saturate(0.94);
+  transition:
+    filter 300ms ease,
+    transform 500ms ease;
+}
+
+.flag-card:hover img {
+  filter: contrast(1.06) saturate(1);
+  transform: scale(1.025);
 }
 
 .flag-card h3 {
