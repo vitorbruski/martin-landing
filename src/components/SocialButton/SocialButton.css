@@ -1,0 +1,28 @@
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-white-alpha);
+  border-radius: var(--radius-small);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.social-button:hover {
+  background: var(--gradient-accent);
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 560px) {
+  .social-button {
+    justify-content: center;
+  }
+}
