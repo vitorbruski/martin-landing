@@ -16,7 +16,6 @@ function SocialButton({ href, label, icon }: SocialButtonProps) {
       aria-label={label}
     >
       <img className="social-button__icon" src={icon} alt="" aria-hidden="true" />
-      <span>{label}</span>
     </a>
   )
 }

@@ -63,6 +63,46 @@
   line-height: 1.75;
 }
 
+.hero__achievements {
+  display: grid;
+  gap: 15px;
+  max-width: 540px;
+  margin: 25px 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__achievements li {
+  position: relative;
+  display: grid;
+  gap: 3px;
+  padding-left: 17px;
+}
+
+.hero__achievements li::before {
+  position: absolute;
+  top: 0.52em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--gradient-cta);
+  border-radius: 50%;
+  content: "";
+  box-shadow: 0 0 0 4px rgba(255, 179, 92, 0.12);
+}
+
+.hero__achievements strong {
+  color: var(--color-text);
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+
+.hero__achievements span {
+  color: var(--color-text-soft);
+  font-size: 0.83rem;
+  line-height: 1.45;
+}
+
 .hero__cta {
   display: inline-flex;
   align-items: center;
@@ -74,11 +114,12 @@
   box-shadow: var(--shadow-accent);
   color: var(--color-primary-dark);
   cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   text-decoration: none;
-  text-transform: uppercase;
   transition:
     background-color 180ms ease,
     transform 180ms ease;

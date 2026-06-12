@@ -20,10 +20,36 @@ function App() {
 
       <main className="main-container">
         <Hero
-          label="Martin Kalkmann"
-          title="Uma vida dedicada a cuidar das pessoas."
-          description="Antes de administrar uma cidade, Martin escolheu cuidar de pessoas. Enfermeiro, mestre em enfermagem e servidor público, construiu sua trajetória ouvindo, acolhendo e buscando soluções para melhorar a vida da comunidade."
-          buttonLabel="Conheça sua história"
+          title="O que Martin fez por Ivoti?"
+          achievements={[
+            {
+              title: "+3.500 pontos de iluminação LED instalados",
+              description:
+                "Mais segurança, economia e qualidade de vida para todos os bairros.",
+            },
+            {
+              title: "3,2 km de ciclofaixa e passeio público",
+              description:
+                "Mais mobilidade, acessibilidade e incentivo à prática esportiva.",
+            },
+            {
+              title: "Investimentos permanentes em saúde pública",
+              description:
+                "Planejamento, escuta da comunidade e fortalecimento dos serviços.",
+            },
+            {
+              title: "Captação de recursos e novos investimentos para Ivoti",
+              description:
+                "Trabalho constante para trazer melhorias e preparar a cidade para o futuro.",
+            },
+            {
+              title: "Planejamento responsável e visão de longo prazo",
+              description:
+                "Uma gestão focada em deixar resultados que permanecem além dos mandatos.",
+            },
+          ]}
+          buttonLabel="Tire suas dúvidas sobre projetos comigo!"
+          buttonHref="https://wa.me/555199627965?text=Bem-vindo%20eleitor!%0A%0AQual%20sua%20d%C3%BAvida%3F"
           image={hero}
           imageAlt="Martin Kalkmann junto à família e à comunidade"
         />

@@ -1,4 +1,5 @@
 import instagramIcon from '../../assets/instagram.svg'
+import facebookIcon from '../../assets/Facebook_Logo_Primary.png'
 import SocialButton from '../SocialButton/SocialButton'
 import './SocialLinksSection.css'
 
@@ -7,6 +8,11 @@ const socialLinks = [
     label: 'Instagram',
     href: 'https://www.instagram.com/martincesarkalkmann/',
     icon: instagramIcon,
+  },
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/martinivoti/',
+    icon: facebookIcon,
   },
 ]
 

@@ -6,6 +6,10 @@ interface HeroProps {
   label?: string
   title?: string
   description?: string
+  achievements?: {
+    title: string
+    description: string
+  }[]
   buttonLabel?: string
   buttonHref?: string
   image?: string
@@ -17,6 +21,7 @@ function Hero({
   label,
   title,
   description,
+  achievements,
   buttonLabel,
   buttonHref,
   image,
@@ -29,6 +34,7 @@ function Hero({
         label={label}
         title={title}
         description={description}
+        achievements={achievements}
         buttonLabel={buttonLabel}
         buttonHref={buttonHref}
       />
